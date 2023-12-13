@@ -17,7 +17,7 @@ namespace Zoo
         {
             string userInput;
 
-            _zoo.AddAnimal();
+            _zoo.AddAnimals();
 
             do
             {
@@ -33,7 +33,7 @@ namespace Zoo
                         break;
 
                     case LookBearCommand:
-                        _zoo.ShowAviary(TypeAnimal.Lion.ToString());
+                        _zoo.ShowAviary(TypeAnimal.Bear.ToString());
                         break;
 
                     case LookHorseCommand:

@@ -11,7 +11,7 @@ namespace Zoo
 
         private AbstractFactory[] _factories = new AbstractFactory[] { new MaleFactory(), new FemaleFactory() };
 
-        public void AddAnimal()
+        public void AddAnimals()
         {
             int maxNumberTypes = 5;
             int maxNumberAnimals = 7;
