@@ -14,13 +14,6 @@ namespace Zoo
 
         public void ShowInfo()
         {
-            Type type = _animals[0].GetType().BaseType;
-            Lion lion = (Lion)_animals[0];
-            Console.WriteLine(lion.Gender);
-
-            Console.WriteLine(_animals[0].GetType().GetProperty(Characteristic.Type.ToString()).GetValue(_animals[0], null));
-            Console.WriteLine(_animals[0].GetType().GetProperty(Characteristic.Gender.ToString()).GetValue(_animals[0], null));
-
             Console.WriteLine($"В вольере находятся {_animals[0].ShowType()} - {_animals.Count} особей.");
 
             foreach (IAnimal animal in _animals)
